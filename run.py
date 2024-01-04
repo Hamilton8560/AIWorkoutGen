@@ -91,6 +91,7 @@ def generate_workout():
             ]
         )
         
+        
         return jsonify(response.choices[0].message.content)
     except Exception as e:
         app.logger.error(f"Error: {e}")
